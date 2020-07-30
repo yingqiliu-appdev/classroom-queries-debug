@@ -1,0 +1,16 @@
+image: jelaniwoods/appdev2021-classroom-queries-debug@sha256:94876da917ce2a53f43b7d9b79fb346b849b75eb92349bb8c44931f679ca5b42
+
+tasks:
+  - command: bundle install
+  - init: bin/setup
+ports:
+  - port: 3000
+    onOpen: open-preview
+    visibility: public
+
+vscode:
+  extensions:
+    - shd101wyy.markdown-preview-enhanced
+    - wingrunr21.vscode-ruby
+    - mbessey.vscode-rufo
+    - aliariff.vscode-erb-beautify
